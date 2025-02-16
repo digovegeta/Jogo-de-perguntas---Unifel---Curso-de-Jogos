@@ -1,0 +1,29 @@
+Trabalho #1 - Terminal Kahoot
+
+Desenvolva um jogo de perguntas e respostas
+O jogo deve ter 10 perguntas, cada pergunta com 4 opções onde 1 é a correta.
+O jogador deve informar qual a opção correta para a alternativa. Se ele acertar, é incrementado uma pontuação a ele, se errar é informado que errou e logo em seguida mostrado qual seria a correta.
+No final do jogo, mostre a quantidade de pontos que o jogador fez.
+Seja criativo na elaboração do programa.
+Desafio extra, tente colocar um timer de 1 segundo entre uma pergunta e outra. 
+Acesse bit.ly/cursogamesunifel, entre na pasta CSharp e abra o bloco de notas do trabalho correspondente, lá estará as perguntas.
+
+"1) Qual comando utilizado para escrever no terminal?\n a. Console.WriteLine \n b. Console.ReadLine \n c. Console.LineWrite \n d. Console.LineRead"
+"2) O C# é uma linguagem de qual categoria?\n a. Estruturada \n b. Orientada a Objetos \n c. Script \n d. Marcação"
+"3) O C# tem como pai qual outra linguagem?\n a. Java \n b. Python \n c. HTML \n d. C"
+"4) Qual comando para criar comentários no C#?\n a. // \n b. \\\\ \n c. || \n d. !--"
+"5) Dentre os tipos de variáveis abaixo, qual consome 1 bit?\n a. int \n b. char \n c. bool \n d. string"
+"6) Qual operador corresponde ao resto da divisão?\n a. # \n b. $ \n c. & \n d. %"
+"7) Qual comando utilizamos para converter para inteiro?\n a. int.Parse \n b. int.Convert \n c. Convert.Parse \n d. Convert.Int"
+"8) Qual símbolo usamos para escrever o valor da variável no terminal?\n a. % \n b. $ \n c. & \n d. #"
+"9) Qual dos nomes de variáveis abaixo é válido?\n a. 123var \n b. nome variavel \n c. !nome! \n d. Variavel_123_Ex"
+"10) Qual comando para gerar números aleatórios?\n a. Console.Random \n b. Math.Random \n c. Random \n d. Random.Round"
+
+
+Trabalho #2 - Jogo da Velha
+Desenvolva um jogo da Velha.
+O jogo da velha é jogado por dois jogadores, onde um vai ser o X e o outro o O.
+Ao fazer as jogadas, o jogo deve verificar quem ganhou ou se deu velha.
+Durante o jogo deve ser possível ver o placar dos jogadores, inclusive a quantidade de vezes que a Velha aconteceu.
+Também deve ser possível mostrar o tabuleiro do jogo após cada jogada!
+O jogo se encerra ao informar o valor 0.
