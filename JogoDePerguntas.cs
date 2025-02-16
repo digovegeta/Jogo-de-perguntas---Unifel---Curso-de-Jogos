@@ -1,6 +1,13 @@
 
-public class JogoDePerguntas(){
-
+public class JogoDePerguntas{
+    #region  Construtor
+    public JogoDePerguntas(){
+        pontuacao = new Pontuacao();
+        montarPerguntas();
+        play();
+    }
+    #endregion
+    #region Metodos
    public void play(){
         montarPerguntas();
         getPergunta();
@@ -25,19 +32,16 @@ public class JogoDePerguntas(){
         while(perguntas.Count > 0){
             string i = perguntas.ElementAt(rand.Next(0, perguntas.Count)).Key;
             if(perguntas[i].fazerPerguta())
-                pontuacao();
+                pontuacao.addPontos();
             perguntas.Remove(i);
         }
         Thread.Sleep(4000);
         Pergunta.limparConsole();
-        exibirPontuacao();
+        pontuacao.exibirPontuacao();
     }
-    private void pontuacao(){
-        this.pontos++;
-    }
-    private void exibirPontuacao(){
-        Console.WriteLine("Pontuação: " + pontos);
-    }
-    private Dictionary<string, Pergunta> perguntas;
-    private int pontos = 0;
+    #endregion
+    #region Variaveis
+     private Dictionary<string, Pergunta> perguntas = null;
+    private Pontuacao pontuacao = null; 
+    #endregion
 }

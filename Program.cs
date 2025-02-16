@@ -6,8 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        JogoDePerguntas j = new JogoDePerguntas();
-        j.play();
+        new JogoDePerguntas();
         
     }
 }

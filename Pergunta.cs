@@ -1,7 +1,7 @@
 using System;
-public class Pergunta(){
+public class Pergunta{
     #region Construtores
-    public Pergunta(string pergunta, string alternativaA, string alternativaB, string alternativaC, string alternativaD) :this()
+    public Pergunta(string pergunta, string alternativaA, string alternativaB, string alternativaC, string alternativaD)
     {
         this.pergunta = pergunta;
         this.alternativaA = alternativaA;
@@ -20,7 +20,7 @@ public class Pergunta(){
         Console.WriteLine("Resposta: " + alternativas[alternativaRespondida]);
         Console.WriteLine("Resposta correta: " + (isRespostaCorreta(alternativas[alternativaRespondida])? "Sim" : "Não"));
         if(!isRespostaCorreta(alternativas[alternativaRespondida]))
-            Console.WriteLine("Resposta: " + respostaCerta);
+            Console.WriteLine("Resposta correta: " + respostaCerta);
         Thread.Sleep(4000);
         return isRespostaCorreta(alternativas[alternativaRespondida]);
     }
